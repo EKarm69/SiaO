@@ -22,7 +22,7 @@ if ( sizeof($request_array['events']) > 0 ) {
 
         $text = $event['message']['text'];
         $a = '';
-        if($text=='กินข้าวกับอะไร'{
+        if($text=='กินข้าวกับอะไร'){
            $a = 'กับน้ำพริกสิจ๊ะ';
         }
         else{ 
@@ -34,7 +34,7 @@ if ( sizeof($request_array['events']) > 0 ) {
         $data = [
             'replyToken' => $reply_token,
             // 'messages' => [['type' => 'text', 'text' => json_encode($request_array) ]]  Debug Detail message
-            'messages' => [['type' => 'text', 'text' => $text ]]
+            'messages' => [['type' => 'text', 'text' => $a ]]
         ];
         $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
