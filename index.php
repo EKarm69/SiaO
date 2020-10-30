@@ -22,8 +22,8 @@ if ( sizeof($request_array['events']) > 0 ) {
 
         $text = $event['message']['text'];
         $a = '';
-        if($text=='กินข้าวกับอะไร'){
-           $a = 'กับน้ำพริกสิจ๊ะ';
+        if($text=='เย็ดกันมั้ย'){
+           $a = 'รอจนจะแห้งแล้ว';
         }
         else{ 
              $a = 'ยังไม่ได้ถาม';
